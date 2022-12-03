@@ -6,10 +6,11 @@ public class Student {
     String studentNumber; 
     int mark1,mark2,mark3,mark4,average; 
 
+    //Constructor
     public Student(){
-
     }
 
+    //Getters/Setters
     public String getFirstName() {
         return firstName;
     }

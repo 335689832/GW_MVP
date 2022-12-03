@@ -15,6 +15,7 @@ public class ViewStudentController extends openWindow{
     void btnStdVWClick(ActionEvent event) {
         String temp = "";
         try{
+            //fill text area with all student names, data, and associated indexes if text field is not empty
             for(int i = 0; i < App.allStudent.size(); i++){
                 temp += i + " " + App.allStudent.get(i).getFirstName() + " " + App.allStudent.get(i).getLastName() + " " + App.allStudent.get(i).getStudentNumber() + "\n";
             }
@@ -22,6 +23,7 @@ public class ViewStudentController extends openWindow{
             if(tfStdVW.getText().equals("")){
                 taStdVW.setText(temp);
             }
+            //if text field contains a valid index, fill text area with that indexes information
             else{
                 String firstName = App.allStudent.get(Integer.parseInt(tfStdVW.getText())).getFirstName();
                 String lastName = App.allStudent.get(Integer.parseInt(tfStdVW.getText())).getLastName();

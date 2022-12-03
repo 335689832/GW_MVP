@@ -14,8 +14,8 @@ public class ViewCoursesController extends openWindow{
 
     @FXML
     void btnCrsVWClick(ActionEvent event) {
-        
-        open("courseView.fxml","Course");
+        //Fill text area with course names and index number if text field is empty
+        //If text field is not empty, fill text area with info of the course of specified index
     }
 
 }

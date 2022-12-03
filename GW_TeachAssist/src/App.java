@@ -8,12 +8,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
  
 public class App extends Application{
-    //
+    //list of students
     public static ArrayList<Student> allStudent= new ArrayList<Student>();
 
 
     @Override
     public void start(Stage primaryStage) {  
+        //Create first window
         Parent root;
         try {
             root = FXMLLoader.load(getClass().getResource("mainWindow.fxml"));
@@ -24,8 +25,6 @@ public class App extends Application{
             primaryStage.show();
         } 
         catch (IOException e) {}
-        
-        // ArrayList<Student> studentList();
     }
  
     public static void main(String[] args) {

@@ -3,6 +3,8 @@ import javafx.fxml.FXML;
 
 
 public class ModifyStudentController extends openWindow{
+
+    //open associated windows when clicked
     @FXML
     void btnAddStdClick(ActionEvent event) {
         open("addStudent.fxml","Add Student");
@@ -20,7 +22,11 @@ public class ModifyStudentController extends openWindow{
 
     @FXML
     void btnDelStdListClick(ActionEvent event) {
-
+        //fully clear the student list
+        for(int i = 0; i < App.allStudent.size(); i++){
+            App.allStudent.remove(i);
+        }
+        open("SuccessWindow.fxml", "Success");
     }
 
 }
