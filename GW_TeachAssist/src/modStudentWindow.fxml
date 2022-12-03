@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModifyStudentController">
+   <children>
+      <Label layoutX="259.0" layoutY="43.0" text="Student">
+         <font>
+            <Font name="Constantia" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="242.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnAddStdListClick" prefHeight="26.0" prefWidth="116.0" text="Add Student List" />
+      <Button layoutX="242.0" layoutY="238.0" mnemonicParsing="false" onAction="#btnAddStdClick" prefHeight="26.0" prefWidth="116.0" text="Add Student" />
+      <Button layoutX="242.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnDelStdClick" prefHeight="26.0" prefWidth="116.0" text="Delete Student" />
+      <Button layoutX="242.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnDelStdListClick" text="Delete Student List" />
+   </children>
+</AnchorPane>
